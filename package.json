@@ -2,18 +2,34 @@
   "name": "nestsms",
   "version": "1.0.0",
   "description": "Nodejs wrapper library for Nest sms or smsonlinegh sms gateway",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RazakAlpha/nestsms"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist/**/*"],
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "publish": "git push --tags && npm publish"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nest",
+    "sms",
+    "gateway",
+    "smsonlinegh"
+  ],
+  "author": "Razak Alpha",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^17.0.5",
     "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
   }
 }
