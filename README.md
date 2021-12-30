@@ -54,12 +54,6 @@ nestsms.init(
 ```
 
 
-## supported bulk sms gateways
-
-Hubtel bulk sms (Ghana) usinghubtel-sms-extended
-routeMobile sms (India) using routemobilesms
-
-
 
 ## Roadmap
 
