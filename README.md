@@ -53,6 +53,25 @@ nestsms.init(
 
 ```
 
+### SEND MESSAGE TO MULTIPLE DESTINATIONS
+```javascript
+
+ nestsms.quickSend(
+     {
+         From:'Test MIS', 
+         To: [233xxxxxxxxxx, 234xxxxxxxx, 4233xxxxxxxx, 223xxxxxxxxx], 
+         Content: 'Testing unisms', 
+         Type: 0})
+         .then(response => {
+             // HANDLE RESPONE
+            console.log(response)
+            }).catch(err => {
+                // HANDLE ERROR
+                console.error(err)
+            })
+
+```
+
 
 
 ## Roadmap
