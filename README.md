@@ -40,7 +40,7 @@ nestsms.init(
  nestsms.quickSend(
      {
          From:'Test MIS', 
-         To: 233241865786, 
+         To: 233xxxxxxxxxx, 
          Content: 'Testing unisms', 
          Type: 0})
          .then(response => {
