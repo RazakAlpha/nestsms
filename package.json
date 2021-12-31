@@ -1,6 +1,6 @@
 {
   "name": "nestsms",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Nodejs wrapper library for Nest sms or smsonlinegh sms gateway",
   "repository": {
     "type": "git",
