@@ -53,11 +53,31 @@ nestsms.init(
 
 ```
 
+### SEND PERSONALIZED MESSAGE
+```javascript
+
+ nestsms.quickSend(
+     {
+         From:'SenderID', 
+         Content: 'Hello {$name}, your account balance is {$balance}', 
+         To: {to: 233xxxxxxxxx, values: ['Alpha', 25000]}, // [{to: 233xxxxxxxxx, values: ['Alpha', 25000]}, {to: 223xxxxxxxxx, values: ['James', 1200]}]
+         Type: 0})
+         .then(response => {
+             // HANDLE RESPONE
+            console.log(response)
+            }).catch(err => {
+                // HANDLE ERROR
+                console.error(err)
+            })
+
+```
+Note: An error is thrown if the number of personalization slots in the message ({$}) in not equal to the number of values provided for the destinations or To values.
+
 
 ## supported bulk sms gateways
+nestsms --> sms.nestitservices.com
+smsonlinegh --> smsonlinegh.com
 
-Hubtel bulk sms (Ghana) usinghubtel-sms-extended
-routeMobile sms (India) using routemobilesms
 
 
 
