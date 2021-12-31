@@ -1,4 +1,4 @@
-import { PlatformProps } from "./interfaces/interface";
+import { IQuickSendPersonalized, PlatformProps } from "./interfaces/interface";
 import { smsEngine } from "./platform";
 import {IQuickSend} from "./interfaces"
 
@@ -14,4 +14,12 @@ export function getSmsEngine() {
 }
 export function quickSend(body: IQuickSend) {
     return _smsEngine.quickSend(body)
+}
+
+export function sendPersonalized(body: IQuickSendPersonalized){
+    return _smsEngine.sendPersonalized(body)
+}
+
+export function checkBalance(){
+    return _smsEngine.checkBalance()
 }

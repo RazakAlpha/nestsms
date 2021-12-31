@@ -71,3 +71,15 @@ export interface IQuickSend {
     Content: string;
     Type: MessageTypes
 }
+export interface IQuickSendPersonalized {
+    From: string;
+    Content: string;
+    Type: MessageTypes
+    To: IPersonalizedDestination | IPersonalizedDestination[]
+}
+
+export interface IPersonalizedDestination {
+    to: number;
+    values: (string|number)[]
+
+}
